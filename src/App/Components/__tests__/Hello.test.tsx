@@ -4,8 +4,8 @@ import renderer from 'react-test-renderer'
 import Hello from '../Hello'
 
 test('renders correctly with defaults', () => {
-  const button = renderer
+  const tree = renderer
     .create(<Hello name="World" enthusiasmLevel={1} />)
     .toJSON()
-  expect(button).toMatchSnapshot()
+  expect(tree).toMatchSnapshot()
 })

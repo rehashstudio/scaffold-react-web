@@ -2,36 +2,46 @@
 
 exports[`renders correctly 1`] = `
 Array [
-  <Text
-    style={
-      Array [
-        Object {
-          "fontSize": 20,
-          "marginBottom": 10,
-          "marginLeft": 10,
-          "marginRight": 10,
-          "marginTop": 10,
-          "textAlign": "center",
-        },
-        undefined,
-      ]
-    }
+  <h1
+    className="sc-EHOje fVUxBM"
   >
-    Welcome to React Native!
-  </Text>,
-  <Text
-    style={
-      Array [
-        Object {
-          "color": "#333333",
-          "marginBottom": 5,
-          "textAlign": "center",
-        },
-        undefined,
-      ]
-    }
+    Welcome to React!
+  </h1>,
+  <h1
+    className="sc-ifAKCX gLMIuo"
   >
-    This is a React Native snapshot test.
-  </Text>,
+    This is a React snapshot test.
+  </h1>,
+  <div
+    className="sc-bdVaJa gTKXhV"
+  >
+    <h1
+      className="sc-bxivhb gLEdJP"
+    >
+      Hello
+       
+      World!
+    </h1>
+    <div
+      className="sc-bwzfXH eQipRW"
+    >
+      <button
+        aria-label="decrement"
+        className="sc-htpNat iyPLpZ"
+        onClick={[Function]}
+        type="button"
+      >
+        -
+      </button>
+      <button
+        aria-label="increment"
+        className="sc-htpNat iyPLpZ"
+        onClick={[Function]}
+        type="button"
+      >
+        +
+      </button>
+    </div>
+  </div>,
 ]
 `;

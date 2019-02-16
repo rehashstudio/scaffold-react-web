@@ -2,21 +2,26 @@ import React from 'react'
 import styled from 'styled-components'
 
 const Root = styled.div`
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  align-self: center;
 `
 
 const ButtonsView = styled.div`
-  flex-direction: row;
-  min-height: 70px;
-  align-items: stretch;
-  align-self: center;
-  border-width: 5px;
+  width: 125px;
+  display: flex;
+  justify-content: space-between;
 `
 
-const ButtonWrapper = styled.div`
-  flex: 1;
-  padding: 0;
+const Button = styled.button`
+  height: 50px;
+  width: 50px;
+  background-color: #999;
+  border-radius: 6px;
+  border-color: #999;
+  font-size: 24px;
 `
 
 const Greeting = styled.h1`
@@ -67,22 +72,20 @@ export default class Hello extends React.Component<IProps, IState> {
             this.getExclamationMarks(this.state.enthusiasmLevel)}
         </Greeting>
         <ButtonsView>
-          <ButtonWrapper>
-            {/* <div
-              title="-"
-              onPress={this.onDecrement}
-              accessibilityLabel="decrement"
-              color="red"
-            />
-          </ButtonWrapper>
-          <ButtonWrapper>
-            <div
-              title="+"
-              onPress={this.onIncrement}
-              accessibilityLabel="increment"
-              color="blue"
-            /> */}
-          </ButtonWrapper>
+          <Button
+            type="button"
+            onClick={this.onDecrement}
+            aria-label="decrement"
+          >
+            -
+          </Button>
+          <Button
+            type="button"
+            onClick={this.onIncrement}
+            aria-label="increment"
+          >
+            +
+          </Button>
         </ButtonsView>
       </Root>
     )
